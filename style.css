@@ -1,53 +1,96 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f8f9fa;
-    color: #222;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
-header {
-    background: #0f2c59;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
-    background: #163a72;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 40px 20px;
-    max-width: 1000px;
+.container {
+    width: 90%;
+    max-width: 1100px;
     margin: auto;
 }
 
-button {
-    background: #0f2c59;
+.hero {
+    background: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c') center/cover no-repeat;
+    height: 90vh;
+    position: relative;
     color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
 }
 
-button:hover {
-    background: #163a72;
+.overlay {
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background: #1e3a8a;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background: #163172;
+}
+
+.about, .cta {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.impact {
+    padding: 60px 0;
+    background: #f4f4f4;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.btn-secondary {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 footer {
-    background: #0f2c59;
+    background: #1e3a8a;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 30px 0;
 }
