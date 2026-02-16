@@ -1,63 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pure Heart Relief | Registered Canadian Charity</title>
-<meta name="description" content="Pure Heart Relief is a Canadian registered charity providing structured poverty relief and essential support in Ontario.">
-<link rel="stylesheet" href="style.css?v=2">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pure Heart Relief | Poverty Relief & Community Support</title>
+  <meta name="description" content="Pure Heart Relief is a Canadian registered charity supporting vulnerable individuals and families through practical poverty relief and community partnerships." />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Pure Heart Relief</h1>
+      </a>
+      <nav class="menu">
+        <a href="about-us.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="get-involved.html">Get Involved</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn primary" href="get-involved.html#donate">Donate</a>
+      </nav>
+    </div>
+  </header>
 
-<nav class="navbar">
-    <div class="container nav-flex">
-        <div class="logo">Pure Heart Relief</div>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Programs</a>
-            <a href="#">Contact</a>
-            <a href="#" class="btn-donate">Donate</a>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card hero-left">
+          <div class="kicker"><span class="dot"></span> Canadian registered charity • Woodstock, Ontario</div>
+          <h2>Practical support that restores dignity.</h2>
+          <p>
+            Pure Heart Relief reduces poverty and strengthens vulnerable communities through targeted relief programs,
+            trusted partnerships, and local action—starting in Woodstock and Oxford County.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="get-involved.html#donate">Donate</a>
+            <a class="btn ghost" href="get-involved.html#volunteer">Volunteer</a>
+            <a class="btn ghost" href="programs.html">See Programs</a>
+          </div>
+          <div class="hr"></div>
+          <div class="small">
+            Tax receipts: Charitable donations are eligible for CRA tax receipts (where applicable).
+          </div>
         </div>
-    </div>
-</nav>
 
-<header class="hero">
-    <div class="container hero-content">
-        <h1>Community-Based Poverty Relief in Ontario</h1>
-        <p>Supporting Families. Restoring Dignity. Changing Lives.</p>
-        <a href="#" class="btn-primary">Donate Now</a>
-    </div>
-</header>
-
-<section class="about">
-    <div class="container">
-        <h2>Who We Are</h2>
-        <p>
-            Pure Heart Relief is a registered Canadian charity providing structured poverty relief programs,
-            emergency assistance, and coordinated community support across Ontario.
-        </p>
-    </div>
-</section>
-
-<section class="impact">
-    <div class="container">
-        <h2>Our Focus Areas</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Emergency Relief</h3>
-                <p>Immediate assistance for vulnerable individuals and families facing hardship.</p>
-            </div>
-
-            <div class="card">
-                <h3>Essential Supplies</h3>
-                <p>Distribution of hygiene kits and basic living necessities.</p>
-            </div>
-
-            <div class="card">
-                <h3>Community Programs</h3>
-                <p>Structured support initiatives promoting long-term stability.</p>
-            </div>
+        <div class="card hero-right">
+          <div class="card stat">
+            <p class="num">Warm Winter Kits</p>
+            <p class="label">Seasonal kits to help individuals and families stay safe during Ontario winters.</p>
+          </div>
+          <div class="card stat">
+            <p class="num">Community Relief</p>
+            <p class="label">Clothing, hygiene, household essentials, and emergency assistance for people facing hardship.</p>
+          </div>
+          <div class="card stat">
+            <p class="num">Partnerships</p>
+            <p class="label">We collaborate with local organizations, volunteers, donors, and corporate partners.</p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>What we do</h3>
+      <div class="grid-3">
+        <div class="card tile">
+          <h4>Essential Relief</h4>
+          <p>Targeted distribution of clothing, hygiene supplies, and basic necessities to people in crisis.</p>
+        </div>
+        <div class="card tile">
+          <h4>Seasonal Initiatives</h4>
+          <p>Winter-focused support and rapid-response assistance when local needs spike.</p>
+        </div>
+        <div class="card tile">
+          <h4>Community Hub Approach</h4>
+          <p>Coordinated support through partnerships to connect people to the right help faster.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card banner">
+        <div>
+          <div class="badge">Local impact • Transparent delivery</div>
+          <h3 style="margin:10px 0 6px;">Help us support more families in Oxford County</h3>
+          <div class="small">Donate, volunteer, or partner with us to deliver measurable community relief.</div>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="get-involved.html#donate">Donate</a>
+          <a class="btn ghost" href="contact.html">Partner</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container" style="padding:0">
+        <div class="small">© <span id="y"></span> Pure Heart Relief • Woodstock, Ontario</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
