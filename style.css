@@ -1,16 +1,89 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+    line-height: 1.7;
+}
+
+/* CONTAINER */
 .container {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
 }
 
+/* NAVBAR */
+.navbar {
+    background: white;
+    padding: 18px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.btn-donate {
+    background: #1e3a8a;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(20,40,80,0.7), rgba(20,40,80,0.7)),
+    url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c') center/cover no-repeat;
+    padding: 140px 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background: white;
+    color: #1e3a8a;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* SECTIONS */
 section {
-    padding: 80px 0;
+    padding: 90px 0;
 }
 
 section h2 {
     text-align: center;
-    font-size: 34px;
+    font-size: 32px;
     margin-bottom: 30px;
 }
 
@@ -21,6 +94,7 @@ section h2 {
     font-size: 18px;
 }
 
+/* IMPACT */
 .impact {
     background: #f4f6f9;
 }
@@ -39,4 +113,17 @@ section h2 {
     border-radius: 8px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.06);
     text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    background: #13294b;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 14px;
 }
